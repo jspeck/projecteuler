@@ -16,7 +16,5 @@ int main(){
 
     printf("%i - %i = %i\n", square_of_sum, sum_of_squares, (square_of_sum-sum_of_squares));
 
-
-
     return 0;
 }
