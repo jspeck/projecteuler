@@ -26,18 +26,20 @@ int isPrime(unsigned long int n){
 }
 
 int main(){
-    
-    int n = 1;
-    unsigned long int i = 3;
 
-    while(n != 10001){
+    unsigned long int sum = 2;
+    
+    unsigned long int i;
+    for(i = 3; i < 2000000; i+=2){
+        printf("%li\n", i);
+        
         if(isPrime(i)){
-            n++;
-            printf("%i prime number is %li\n", n, i);
+            sum += i;
         }
-        i+=2;           
+        
     }
+    
+    printf("%li\n", sum);
 
     return 0;
 }
-
